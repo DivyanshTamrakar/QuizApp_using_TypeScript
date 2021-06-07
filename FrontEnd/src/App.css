@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+
 .App {
   text-align: center;
 }
@@ -6,6 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -33,30 +35,38 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.QuizHeader{
-color: black;
-width: 100%;
-background-color: rgb(255, 145, 0);
-padding: 1rem;
-font-weight: bolder;
+.QuizHeader {
+  color: white;
+  width: 100%;
+  
+  background-color: rgb(255, 145, 0);
+  padding: 0.5rem;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Quiz Section design */
-.QuizFrame{
+.QuizFrame {
   margin-left: 2.5rem;
   text-align: center;
+ 
 }
-.QuizDetails{
+
+.QuizDetails {
   margin-top: 1.0rem;
   display: flex;
   justify-content: space-between;
 }
-.score-card{
+
+.score-card {
   border-radius: 1rem;
   width: 8rem;
   margin-right: 4rem;
@@ -67,14 +77,18 @@ font-weight: bolder;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.Question{
+
+.Question {
   margin-top: 1.5rem;
   text-align: left;
   font-weight: bold;
   font-size: 2.0rem;
   display: flex;
+  flex-direction: row;
+  max-width: 90%;
 }
-.Options{
+
+.Options {
   text-align: center;
   margin-top: 1.5rem;
   margin-left: 3.5rem;
@@ -87,25 +101,28 @@ font-weight: bolder;
   grid-template-columns: 25% 25%;
   grid-row-gap: 2rem;
   grid-column-gap: 2rem;
-  
+
 }
-.OptionItem{
+
+.OptionItem {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0.4rem;
   cursor: pointer;
   text-align: center;
   padding: 1rem;
   display: grid;
-  
+
 }
-.Buttons{
-  margin-top: 2.5rem;
+
+.Buttons {
+  margin-top: 1.8rem;
   display: flex;
   width: 50%;
   justify-content: space-between;
-  margin-left:3.2rem ;
+  margin-left: 3.2rem;
 }
-.next{
+
+.next {
   border: none;
   background-color: #ff9100;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -115,10 +132,11 @@ font-weight: bolder;
   font-weight: bold;
   padding: 0.5rem;
   color: white;
-  width: 5rem;
+  width: max-content;
   cursor: pointer;
 }
-.previous{
+
+.previous {
   border: none;
   background-color: #ff9100;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -130,4 +148,45 @@ font-weight: bolder;
   color: white;
   width: 6rem;
   cursor: pointer;
+}
+
+.HomeFrame {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+
+}
+
+.Heading {
+  font-size: larger;
+  font-weight: bolder;
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.User-details {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+}
+.Name_box{
+  border: none;
+  width: 45%;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  font-weight: bolder;
+  font-size: large;
+  border: 0.5px solid rgba(128, 128, 128, 0.788);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+
+.Drop-down{
+  align-self: center;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }

@@ -1,15 +1,36 @@
-import { Link } from 'react-router-dom';
-
+import {Link} from 'react-router-dom'
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 export default  function Home(){
+    const options = [     'Marvel Cinematic Univers', 'Harry Potter ', 'Twilight'   ];
+    let username:string;
+    const defaultOption = options[0];
 
-    function handler(e:any){
-        localStorage.setItem('username',e.target.value)
-    }
+
+
+
 
     return (
-    <div>
-    <input type='text'onChange={(e)=>{handler(e)}}></input>
-                <Link to="/quiz"><button>Go To Quiz</button></Link> 
-                </div>)
+    <div className="HomeFrame">
+      <div className="User-details">
+      <span className="Heading">Welcome to the Quiz</span>
+      <span style={{textAlign:"center"}}>
+          <input onChange={(text)=>{
+            username = text.target.value;
+            console.log(username)
+          }} className="Name_box" type = "text" placeholder="Enter Your Name"/>
+      </span>
+       <Dropdown className="Drop-down" options={options}  value={defaultOption} placeholder="Select an option" />
+       <Link to='/quiz'><button  style={{alignSelf:"center"}} className="next">Start Quiz </button></Link>
+
+      </div>
+
+       <div style={{margin:'1rem'}}>
+               {
+                    <img src="images/undraw_searching_p5ux.svg" alt="quiz_image" height="100%" width="100%" />
+                 }
+        </div>
+    </div>
+    );
 }

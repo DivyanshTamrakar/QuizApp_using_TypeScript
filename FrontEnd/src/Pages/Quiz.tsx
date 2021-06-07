@@ -5,7 +5,7 @@ type questionprop ={
 export default function QuizQuestion({questionno,question}:questionprop){
     return (
     <div className='Question'>
-        Q.<span>{questionno }</span><span>{question}</span>
+        <span style={{marginRight:"0.8rem"}}>Q.{questionno}</span><span>{question}</span>
     </div>);
     
 }
