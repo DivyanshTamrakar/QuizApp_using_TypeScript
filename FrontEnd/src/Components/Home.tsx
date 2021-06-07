@@ -4,7 +4,6 @@ import 'react-dropdown/style.css';
 
 export default  function Home(){
     const options = [     'Marvel Cinematic Univers', 'Harry Potter ', 'Twilight'   ];
-    let username:string;
     const defaultOption = options[0];
 
 
@@ -16,10 +15,7 @@ export default  function Home(){
       <div className="User-details">
       <span className="Heading">Welcome to the Quiz</span>
       <span style={{textAlign:"center"}}>
-          <input onChange={(text)=>{
-            username = text.target.value;
-            console.log(username)
-          }} className="Name_box" type = "text" placeholder="Enter Your Name"/>
+          <input className="Name_box" type = "text" placeholder="Enter Your Name"/>
       </span>
        <Dropdown className="Drop-down" options={options}  value={defaultOption} placeholder="Select an option" />
        <Link to='/quiz'><button  style={{alignSelf:"center"}} className="next">Start Quiz </button></Link>
