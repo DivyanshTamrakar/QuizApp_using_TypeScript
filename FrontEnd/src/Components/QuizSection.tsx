@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import QuizQuestion from '../Pages/Quiz'
 import { quizOne } from '../QuizData/quizdata';
+import { useScore } from "../Context/scoreContext";
 import Options from '../Pages/Options';
 
 
 export default  function QuizSection(){
     const [currentquestionno,setcurrentquestionno] = useState(0);
-    let score = 0;
+   const [isTouched,setIsTouched] = useState<number|boolean>(false);
+
+   let  {score,setScore} = useScore();
     let username = "Divyansh";
     function handler(){
      setcurrentquestionno(currentquestionno + 1);
+     setIsTouched(false)
          }
     function PreHandler(){
      setcurrentquestionno(currentquestionno - 1);
@@ -26,13 +30,12 @@ export default  function QuizSection(){
     </div>
     </div>
     <QuizQuestion questionno={currentquestionno + 1}   question={quizOne.questions[currentquestionno].question}/>
-    <Options options={quizOne.questions[currentquestionno].options} />
+    <Options options={quizOne.questions[currentquestionno].options} isTouched={isTouched} setIsTouched={setIsTouched}/>
     <div className="Buttons">
     <button className='previous' disabled={currentquestionno === 0?true:false} onClick={PreHandler}>Previous</button>
     <button className='next' disabled={currentquestionno === quizOne.questions.length - 1?true:false} onClick={handler}>Next</button>
     </div>
-{/* <Timer/> */}
-     </div>)
+    </div>)
 
 
 

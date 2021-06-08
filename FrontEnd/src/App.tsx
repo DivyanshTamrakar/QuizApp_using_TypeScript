@@ -3,10 +3,7 @@ import Header  from "../src/Components/Header";
 import Home from './Components/Home'
 import QuizSection from './Components/QuizSection'
 import Result from './Components/Result'
-import {
-  Routes,
-  Route
-} from 'react-router-dom';
+import {  Routes,  Route } from 'react-router-dom';
 
 
 function App() {

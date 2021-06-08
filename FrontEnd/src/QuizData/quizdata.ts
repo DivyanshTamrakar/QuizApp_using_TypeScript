@@ -4,7 +4,6 @@ const quizOne :Quiz = {
   quizName: "Marvel Cinematic Universe",
   playTime: "5 minutes",
   questions: [
-   
     {
       question:
         "In the Incredible Hulk, what does Tony tell Thaddeus Ross at the end of the film?",
