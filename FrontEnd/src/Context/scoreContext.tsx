@@ -1,4 +1,4 @@
-import {createContext, useContext, Dispatch, SetStateAction, useState } from "react";
+import {createContext, useContext,useState } from "react";
 
 export type ContextType ={
     score:number,

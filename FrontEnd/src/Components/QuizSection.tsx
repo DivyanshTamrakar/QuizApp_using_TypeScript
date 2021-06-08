@@ -7,9 +7,9 @@ import Options from '../Pages/Options';
 
 export default  function QuizSection(){
     const [currentquestionno,setcurrentquestionno] = useState(0);
-   const [isTouched,setIsTouched] = useState<number|boolean>(false);
+    const [isTouched,setIsTouched] = useState<number|boolean>(false);
 
-   let  {score,setScore} = useScore();
+   let  {score} = useScore();
     let username = "Divyansh";
     function handler(){
      setcurrentquestionno(currentquestionno + 1);

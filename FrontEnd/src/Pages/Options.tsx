@@ -1,11 +1,11 @@
-import { Dispatch, SetStateAction } from "react";
 import { useScore } from "../Context/scoreContext";
 
 type ArrayProp ={text:string,isRight:boolean};
 type Optionsprop = {
     options : ArrayProp[];
     isTouched: boolean|number;
-    setIsTouched:Dispatch<SetStateAction<boolean|number>>
+    // setIsTouched:Dispatch<SetStateAction<boolean|number>>
+    setIsTouched:(c: number|boolean) => void
 }
 
 export default function Options({options,isTouched,setIsTouched}:Optionsprop){
@@ -16,8 +16,6 @@ function Handler(isRight:boolean,index:number){
     if(isRight){
         setIsTouched(true);
         setScore(score + 1);
-
-        
     }
     else{
         setIsTouched(index);
