@@ -3,38 +3,34 @@ import QuizQuestion from '../Pages/Quiz'
 import { quizOne } from '../QuizData/quizdata';
 import { useScore } from "../Context/scoreContext";
 import Options from '../Pages/Options';
+import { useNavigate } from "react-router-dom";
+import Button from './Button';
 
 
+const scoredesign:React.CSSProperties={fontSize:'2.5rem',fontWeight:'bolder'}; 
+const userDesign = {fontWeight:'bolder',fontSize:"3.0rem",marginTop:'2rem'} as React.CSSProperties;
 export default  function QuizSection(){
     const [currentquestionno,setcurrentquestionno] = useState(0);
     const [isTouched,setIsTouched] = useState<number|boolean>(false);
+    let navigate = useNavigate();
 
    let  {score} = useScore();
     let username = "Divyansh";
-    function handler(){
-     setcurrentquestionno(currentquestionno + 1);
-     setIsTouched(false)
-         }
-    function PreHandler(){
-     setcurrentquestionno(currentquestionno - 1);
-
-         }
+     
 
     return (
     <div className="QuizFrame">
     <div className="QuizDetails">
-    <span style={{fontWeight:'bolder',fontSize:"3.0rem",marginTop:'2rem'}}>Hello!, {username}</span>
+    <span style={userDesign}>Hello!, {username}</span>
     <div className="score-card">
-    <span style={{fontSize:'2.5rem',fontWeight:'bolder'}}>Score</span>
-    <span style={{fontSize:'2.5rem',fontWeight:'bolder'}}>{score}/10</span>
+    <span style={scoredesign}>Score</span>
+    <span style={scoredesign}>{score}/10</span>
     </div>
     </div>
-    <QuizQuestion questionno={currentquestionno + 1}   question={quizOne.questions[currentquestionno].question}/>
+    <QuizQuestion questionno={currentquestionno + 1} question={quizOne.questions[currentquestionno].question}/>
     <Options options={quizOne.questions[currentquestionno].options} isTouched={isTouched} setIsTouched={setIsTouched}/>
-    <div className="Buttons">
-    <button className='previous' disabled={currentquestionno === 0?true:false} onClick={PreHandler}>Previous</button>
-    <button className='next' disabled={currentquestionno === quizOne.questions.length - 1?true:false} onClick={handler}>Next</button>
-    </div>
+    <Button currentquestionno={currentquestionno} setIsTouched={setIsTouched} setcurrentquestionno={setcurrentquestionno}/>
+   
     </div>)
 
 

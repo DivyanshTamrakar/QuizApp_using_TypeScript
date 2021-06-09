@@ -25,7 +25,7 @@ export default  function Home(){
        <div style={{margin:'1rem'}}>
                {
                     <img src="images/undraw_searching_p5ux.svg" alt="quiz_image" height="100%" width="100%" />
-                 }
+                }
         </div>
     </div>
     );
