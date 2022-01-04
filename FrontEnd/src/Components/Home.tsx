@@ -12,7 +12,7 @@ export default function Home() {
     const defaultOption = options[0];
     const [userdata, setuserdata] = useState<aboutinfo>({
         name: "",
-        title: ""
+        title: defaultOption
     })
 
     const getName = (e: any) => {
@@ -25,6 +25,8 @@ export default function Home() {
         if (userdata.name === "") {
             alert("name field cant be empty");
         } else {
+            localStorage.setItem('name',userdata.name)
+            localStorage.setItem('quizname',userdata.title)
             navigate("/quiz");
 
         }
