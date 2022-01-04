@@ -1,11 +1,11 @@
-import {  Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
-export default  function Header(){
-    return <div className='QuizHeader'>
-           <Link to="/"><div>Quiz App</div></Link>
-           </div>
+export default function Header() {
+    return <div className='headerFrame'>
+        <Link className='quiz_header' to="/">Quiz App</Link>
+    </div>
 
 
 }
