@@ -156,43 +156,44 @@ body {
 
 .HomeFrame {
   display: grid;
-  grid-template-columns: 50% 50%;
-
-
+  margin: 25px;
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
 }
 
-.Heading {
-  font-size: larger;
-  font-weight: bolder;
-  font-size: 4rem;
+.title_head {
+  font-size: medium;
+  font-weight: 900;
+  font-size: 60px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-.User-details {
-  margin: 1rem;
+.user_input_details {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
-
 }
-.Name_box{
-  border: none;
-  width: 45%;
-  padding: 0.7rem;
-  margin: 0.5rem;
+.nameinput{
+  padding: 15px;
   font-weight: bolder;
-  font-size: large;
   border: 0.5px solid rgba(128, 128, 128, 0.788);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  font-size: large;
+  margin: 50px 10px 20px 10px;
   
-
+}
+.Drop-down-div{
+  margin: 10px ;
+  
+}
 .Drop-down{
   align-self: center;
-  width: 50%;
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  font-weight: bold;
+  padding: 5px;
+  
+  
 }
 
 .right-answer{
@@ -202,4 +203,55 @@ body {
 .wrong-answer{
   background-color:red;
   color: white;
+}
+
+
+
+
+ /* For mobile screens */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .HomeFrame{
+    display: flex;
+    flex-direction: column-reverse;
+   
+  }
+  .intro_image{
+    margin: 20px 20px 0 20px;
+  }
+  .nameinput{
+    border: none;
+    font-weight: bolder;
+    border: 0.5px solid rgba(128, 128, 128, 0.788);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: medium;
+    padding: 10px;
+    margin: 20px 20px 10px 20px;
+  }
+  .Drop-down-div{
+    margin: 20px 20px 10px 20px;
+  }
+  
+.Drop-down{
+  width: 100%;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: bolder;
+  
+}
+    
+
+
+}
+
+
+.m20{
+  margin: 20px 20px 0px 20px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mb20{
+  margin-bottom: 20px;
 }

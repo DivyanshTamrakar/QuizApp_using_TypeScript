@@ -20,8 +20,14 @@ export type Quiz = {
 
 }
 
-
 export type HeaderProps={
     username:string,
+    
+}
+
+
+export type aboutinfo={
+    name:string,
+    title:string,
     
 }
