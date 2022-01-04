@@ -6,23 +6,19 @@ import Options from '../Pages/Options';
 import Button from './Button';
 
 
-const scoredesign: React.CSSProperties = { fontSize: '2.5rem', fontWeight: 'bolder' };
-const userDesign = { fontWeight: 'bolder', fontSize: "3.0rem", marginTop: '2rem' } as React.CSSProperties;
 export default function QuizSection() {
     const [currentquestionno, setcurrentquestionno] = useState(0);
     const [isTouched, setIsTouched] = useState<number | boolean>(false);
-
     const { score } = useScore();
-    const username = "Divyansh";
 
 
     return (
-        <div className="QuizFrame">
+        <div className='quizframe'>
             <div className="QuizDetails">
-                <span style={userDesign}>Hello!, {username}</span>
+                <span className='user-quiz-heading'>Hello,{localStorage.getItem('name')}</span>
                 <div className="score-card">
-                    <span style={scoredesign}>Score</span>
-                    <span style={scoredesign}>{score}/10</span>
+                    <span>Score</span>
+                    <span>{score}/10</span>
                 </div>
             </div>
             <QuizQuestion questionno={currentquestionno + 1} question={quizOne.questions[currentquestionno].question} />
