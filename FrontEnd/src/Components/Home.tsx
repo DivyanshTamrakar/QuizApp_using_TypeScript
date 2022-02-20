@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
     const navigate = useNavigate();
-    const options = ['Marvel Cinematic Univers', 'Harry Potter ', 'Twilight', 'DC'];
+    const options = ['Marvel Cinematic Univers', 'Harry Potter ','DC'];
     const defaultOption = options[0];
     const [userdata, setuserdata] = useState<aboutinfo>({
         name: "",

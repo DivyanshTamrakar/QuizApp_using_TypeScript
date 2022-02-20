@@ -250,5 +250,480 @@ const quizOne :Quiz = {
   ]
 };
 
+const quizTwo :Quiz = {
+  quizName: "Harry Potter",
+  playTime: "5 minutes",
+  questions: [
+    {
+      question:
+        "What is the name of the Weasley's home?",
+      points: 1,
+      options: [
+        {
+          text: "The Lair",
+          isRight: false
+        },
+        {
+          text: "The Magic Garden",
+          isRight: false
+        },
+        {
+          text: "The Burrow",
+          isRight: true
+        },
+        {
+          text:"The Den",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "What has Mr. Weasley enchanted his car to do?",
+      points: 5,
+      negativePoint:0,
+      options: [
+        {
+          text: "Fly",
+          isRight: true
+        },
+        {
+          text: "Sing",
+          isRight: false
+        },
+        {
+          text: "Reptiles",
+          isRight: false
+        },
+        {
+          text:"Eat dangerous predators",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "How do people who use Floo powder travel?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Underwater",
+          isRight: false
+        },
+        {
+          text: "Through fireplaces",
+          isRight: true
+        },
+        {
+          text: "Underground",
+          isRight: false
+        },
+        {
+          text:"Through the sky",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question:'Why do Harry and Ron fly a Ford Anglia to Hogwarts?',
+      points:1,
+      options: [
+        {
+          text: "Because they want to beat the train, thus getting first choice of dorm rooms",
+          isRight: false
+        },
+        {
+          text: "Because Gate Nine-and-three-quarters closed up before they could enter",
+          isRight: true
+        },
+        {
+          text: "Because they want to impress Gilderoy Lockhart",
+          isRight: false
+        },
+        {
+          text:"Because George dared them to try it",
+          isRight:false
+        }
+      ]
 
-export { quizOne };
+    },
+    {
+      question: "What is Harry instructed to do for his detention?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Polish trophies",
+          isRight: false
+        },
+        {
+          text: "Answer Gilderoy Lockhart's fan mail",
+          isRight: true
+        },
+        {
+          text: "Mop up the first floor girls' bathroom",
+          isRight: false
+        },
+        {
+          text:"Tend to Professor Sprout's Mandrakes",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "What derogatory name does Malfoy call Hermione?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Mudblood",
+          isRight: true
+        },
+        {
+          text: "Miss Priss",
+          isRight: false
+        },
+        {
+          text: "Rodent Girl",
+          isRight: false
+        },
+        {
+          text:"Polyjuice Punk",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "Which first year loves to photograph Harry?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Ginny Weasley",
+          isRight: false
+        },
+        {
+          text: "Colin Creevey",
+          isRight: true
+        },
+        {
+          text: "Justin Finch-Fletchley",
+          isRight: false
+        },
+        {
+          text:"Penelope Clearwater",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "What does Lucius Malfoy donate to Slytherin House?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Expensive new sofas",
+          isRight: false
+        },
+        {
+          text: "A winged monster to guard its entrance",
+          isRight:false
+        },
+        {
+          text: "A library of dark magic books",
+          isRight: false
+        },
+        {
+          text:"A speedy set of broomsticks for its Quidditch team",
+          isRight:true
+        }
+      ]
+    },
+    {
+      question: "Who of the following is NOT petrified?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Percy Weasley",
+          isRight: true
+        },
+        {
+          text: "Penelope Clearwater",
+          isRight:false
+        },
+        {
+          text: "Hermione Granger",
+          isRight: false
+        },
+        {
+          text:"Colin Creevey",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: " What animal is the sworn enemy of the basilisk?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Satyr",
+          isRight: false
+        },
+        {
+          text: "Spider",
+          isRight:true
+        },
+        {
+          text: "Butterfly",
+          isRight: false
+        },
+        {
+          text:"Unicorn",
+          isRight:false
+        }
+      ]
+    },
+
+  ]
+};
+
+const quizThree :Quiz = {
+  quizName: "DC",
+  playTime: "5 minutes",
+  questions: [
+    {
+      question:
+        "What Does the S on Superman’s chest stand for in Kryptonian?",
+      points: 1,
+      options: [
+        {
+          text: "Love",
+          isRight: false
+        },
+        {
+          text: "Harmony",
+          isRight: false
+        },
+        {
+          text: "Hope",
+          isRight: true
+        },
+        {
+          text:"Faith",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "What Superman propriety cast Amy Adams prior to her playing Lois Lane in Man of Steel?",
+      points: 5,
+      negativePoint:0,
+      options: [
+        {
+          text: "Smallville",
+          isRight: true
+        },
+        {
+          text: "Lois and Clark the New Adventures of Superman",
+          isRight: false
+        },
+        {
+          text: "Superman the Animated Series",
+          isRight: false
+        },
+        {
+          text:"Superman Returns",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "Which two large corporation logos were seen on buildings in Metropolis during Man of Steels final battle?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Lexcorp and Star Labs",
+          isRight: false
+        },
+        {
+          text: "Wayne Enterprises and Lexcorp",
+          isRight: true
+        },
+        {
+          text: "Wayne Enterprises and Kord Industries",
+          isRight: false
+        },
+        {
+          text:"Lexcorp and Queen Consolidated",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question:'What newspaper does Clark Kent get a job at by the end of Man of Steel?',
+      points:1,
+      options: [
+        {
+          text: "Daily Bugle",
+          isRight: false
+        },
+        {
+          text: "Daily Planet",
+          isRight: true
+        },
+        {
+          text: "Daily News",
+          isRight: false
+        },
+        {
+          text:"Weekly World News",
+          isRight:false
+        }
+      ]
+
+    },
+    {
+      question: "What are the names of Superman's adopted parents?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Johnathan and Elizabeth",
+          isRight: false
+        },
+        {
+          text: "Johnathan and Martha",
+          isRight: true
+        },
+        {
+          text: "Johnathan and Mary",
+          isRight: false
+        },
+        {
+          text:"Johnathan and Betty",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "Where were criminals sent to on Krypton?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "The Phantom Zone",
+          isRight: true
+        },
+        {
+          text: "The Next Dimension",
+          isRight: false
+        },
+        {
+          text: "Kessel",
+          isRight: false
+        },
+        {
+          text:"The Dark World",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "What baseball team is on Clark's t-shirt in Man of Steel?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Detroit Tigers",
+          isRight: false
+        },
+        {
+          text: "Kansas City Royals",
+          isRight: true
+        },
+        {
+          text: "New York Yankees",
+          isRight: false
+        },
+        {
+          text:"St. Louis Cardinals",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "Batman V Superman Dawn of Justice was loosely based on what popular Batman story?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Batman Hush",
+          isRight: false
+        },
+        {
+          text: "Batman Year One",
+          isRight:false
+        },
+        {
+          text: "Batman Death of the Family",
+          isRight: false
+        },
+        {
+          text:"The Dark Knight Returns",
+          isRight:true
+        }
+      ]
+    },
+    {
+      question: "What did the jar on Senator Finch's desk have written on it?",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "Granny's peach tea",
+          isRight: true
+        },
+        {
+          text: "Luthor's Urine",
+          isRight:false
+        },
+        {
+          text: "Uncle Pete's coffee",
+          isRight: false
+        },
+        {
+          text:"Lex's Soda Pop",
+          isRight:false
+        }
+      ]
+    },
+    {
+      question: "What show do the actors who play Thomas and Martha Wayne star together in? ",
+      points: 1,
+      negativePoint:0,
+      options: [
+        {
+          text: "The Good Wife",
+          isRight: false
+        },
+        {
+          text: "The Walking Dead",
+          isRight:true
+        },
+        {
+          text: "Supernatural",
+          isRight: false
+        },
+        {
+          text:"The Vampire Dairies",
+          isRight:false
+        }
+      ]
+    },
+
+  ]
+};
+
+export { quizOne, quizTwo , quizThree};
